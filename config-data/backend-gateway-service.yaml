@@ -29,7 +29,7 @@ spring:
         - id: backend-estudiantes-service
           uri: lb://backend-estudiantes-service
           predicates:
-            - Path=/estudiante/**
+            - Path=/student/**
         - id: backend-cuotas-service
           uri: lb://backend-cuotas-service
           predicates:
