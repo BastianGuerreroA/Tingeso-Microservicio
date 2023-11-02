@@ -33,4 +33,4 @@ spring:
         - id: backend-cuotas-service
           uri: lb://backend-cuotas-service
           predicates:
-            - Path=/cuotas/**
+            - Path=/pago/**
