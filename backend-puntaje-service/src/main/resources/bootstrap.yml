@@ -9,7 +9,7 @@ spring:
     restart:
       aditional-paths: src/main/java
   application:
-    name: backend-estudiantes-service
+    name: backend-puntaje-service
   jpa:
     database-platform: org.hibernate.dialect.PostgresPlusDialect
     generate-ddl: true
@@ -23,8 +23,6 @@ spring:
   datasource:
     plataform: postgres
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${POSTGRES_DB_HOST}:5432/${POSTGRES_DB_ESTUDIANTES}?useSSL=false
+    url: jdbc:postgresql://${POSTGRES_DB_HOST}:5432/${POSTGRES_DB_PUNTAJE}?useSSL=false
     username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
-    hikari:
-      initialization-fail-timeout: 0
